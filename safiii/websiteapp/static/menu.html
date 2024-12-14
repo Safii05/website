@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="c:\Users\admin\Desktop\WEB\New\style css.css">
+</head>
+<body>
+  <header>
+    <h1>Our Menu</h1>
+    <nav>
+        <a href="file:///C:/Users/admin/Desktop/WEB/New/menu.html">Menu</a>
+        <a href="file:///C:/Users/admin/Desktop/WEB/New/team.html">Team</a>
+        <a href="file:///C:/Users/admin/Desktop/WEB/New/contact.html">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Delicious Dishes</h2>
+    <div class="menu-grid">
+      <div class="menu-item" onclick="showDetails('Pizza', 'images/pizza.jpg')">
+        <img src="c:\Users\admin\Downloads\download.jpeg" alt="Pizza">
+        <p>Pizza</p>
+      </div>
+      <div class="menu-item" onclick="showDetails('Burger', 'images/burger.jpg')">
+        <img src="c:\Users\admin\Downloads\download (1).jpeg" alt="Burger">
+        <p>Burger</p>
+      </div>
+      <div class="menu-item" onclick="showDetails('Pasta', 'images/pasta.jpg')">
+        <img src="c:\Users\admin\Downloads\download (2).jpeg" alt="Pasta">
+        <p>Pasta</p>
+      </div>
+      <div class="menu-item" onclick="showDetails('Salad', 'images/salad.jpg')">
+        <img src="c:\Users\admin\Downloads\download (3).jpeg" alt="Salad">
+        <p>Salad</p>
+      </div>
+      <div class="menu-item" onclick="showDetails('Salad', 'images/salad.jpg')">
+        <img src="c:\Users\admin\Downloads\download (4).jpeg" alt="Sushi">
+        <p>Sushi</p>
+      </div>
+      <div class="menu-item" onclick="showDetails('Salad', 'images/salad.jpg')">
+        <img src="c:\Users\admin\Downloads\download (5).jpeg" alt="Steak">
+        <p>Steak</p>
+      </div>
+      <div class="menu-item" onclick="showDetails('Salad', 'images/salad.jpg')">
+        <img src="c:\Users\admin\Downloads\download (6).jpeg" alt="fries">
+        <p>Fries</p>
+        </div>
+        <div class="menu-item" onclick="showDetails('Salad', 'images/salad.jpg')">
+            <img src="c:\Users\admin\Downloads\download (7).jpeg" alt="Icecream">
+            <p>Icecream</p>
+          </div>
+    </div>
+    <div id="food-details" class="food-details">
+      <!-- Food details will display dynamically here -->
+    </div>
+  </main>
+    <script>
+    function showDetails(name, imgSrc) {
+      const details = document.getElementById('food-details');
+      details.innerHTML = `
+        <h3>${name}</h3>
+        <img src="${imgSrc}" alt="${name}" style="width:300px; height:auto; margin-top:10px;">
+      `;
+    }
+  </script>
+</body>
+</html>

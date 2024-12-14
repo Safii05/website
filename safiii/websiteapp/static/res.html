@@ -1,31 +1,4 @@
-# Ex.07 Restaurant Website
-# Date: 05.12.2024
-# AIM:
-To develop a static Restaurant website to display the food items and services provided by them.
 
-# DESIGN STEPS:
-## Step 1:
-Requirement collection.
-
-## Step 2:
-Creating the layout using HTML and CSS.
-
-## Step 3:
-Updating the sample content.
-
-## Step 4:
-Choose the appropriate style and color scheme.
-
-## Step 5:
-Validate the layout in various browsers.
-
-## Step 6:
-Validate the HTML code.
-
-## Step 7:
-Publish the website in the given URL.
-
-# PROGRAM:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -161,170 +134,16 @@ Publish the website in the given URL.
   
 </body>
 </html>
-menu.html 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu</title>
-  <link rel="stylesheet" href="c:\Users\admin\Desktop\WEB\New\style css.css">
-</head>
-<body>
-  <header>
-    <h1>Our Menu</h1>
-    <nav>
-        <a href="file:///C:/Users/admin/Desktop/WEB/New/menu.html">Menu</a>
-        <a href="file:///C:/Users/admin/Desktop/WEB/New/team.html">Team</a>
-        <a href="file:///C:/Users/admin/Desktop/WEB/New/contact.html">Contact Us</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Delicious Dishes</h2>
-    <div class="menu-grid">
-      <div class="menu-item" onclick="showDetails('Pizza', 'images/pizza.jpg')">
-        <img src="c:\Users\admin\Downloads\download.jpeg" alt="Pizza">
-        <p>Pizza</p>
-      </div>
-      <div class="menu-item" onclick="showDetails('Burger', 'images/burger.jpg')">
-        <img src="c:\Users\admin\Downloads\download (1).jpeg" alt="Burger">
-        <p>Burger</p>
-      </div>
-      <div class="menu-item" onclick="showDetails('Pasta', 'images/pasta.jpg')">
-        <img src="c:\Users\admin\Downloads\download (2).jpeg" alt="Pasta">
-        <p>Pasta</p>
-      </div>
-      <div class="menu-item" onclick="showDetails('Salad', 'images/salad.jpg')">
-        <img src="c:\Users\admin\Downloads\download (3).jpeg" alt="Salad">
-        <p>Salad</p>
-      </div>
-      <div class="menu-item" onclick="showDetails('Salad', 'images/salad.jpg')">
-        <img src="c:\Users\admin\Downloads\download (4).jpeg" alt="Sushi">
-        <p>Sushi</p>
-      </div>
-      <div class="menu-item" onclick="showDetails('Salad', 'images/salad.jpg')">
-        <img src="c:\Users\admin\Downloads\download (5).jpeg" alt="Steak">
-        <p>Steak</p>
-      </div>
-      <div class="menu-item" onclick="showDetails('Salad', 'images/salad.jpg')">
-        <img src="c:\Users\admin\Downloads\download (6).jpeg" alt="fries">
-        <p>Fries</p>
-        </div>
-        <div class="menu-item" onclick="showDetails('Salad', 'images/salad.jpg')">
-            <img src="c:\Users\admin\Downloads\download (7).jpeg" alt="Icecream">
-            <p>Icecream</p>
-          </div>
-    </div>
-    <div id="food-details" class="food-details">
-      <!-- Food details will display dynamically here -->
-    </div>
-  </main>
-    <script>
-    function showDetails(name, imgSrc) {
-      const details = document.getElementById('food-details');
-      details.innerHTML = `
-        <h3>${name}</h3>
-        <img src="${imgSrc}" alt="${name}" style="width:300px; height:auto; margin-top:10px;">
-      `;
-    }
-  </script>
-</body>
-</html>
-contact
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="c:\Users\admin\Desktop\WEB\New\style css.css">
-</head>
-<body>
-  <header>
-    <h1>Contact Us</h1>
-    <nav>
-        <a href="file:///C:/Users/admin/Desktop/WEB/New/menu.html">Menu</a>
-        <a href="file:///C:/Users/admin/Desktop/WEB/New/team.html">Team</a>
-        <a href="file:///C:/Users/admin/Desktop/WEB/New/contact.html">Contact Us</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Get in Touch</h2>
-       <p>Address: 123 Food Street, Chennai, India</p>
-    <p>Phone: +91 9876543210</p>
-    <p>Email: contact@restaurant.com</p>
-  </main>
-</body>
-</html>
-
-<!-- admin.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>About Me</h1>
-    <nav>
-      <a href="index.html">About Me</a>
-      <a href="menu.html">Menu</a>
-      <a href="admin.html">Administration</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
-  <main>
-    <section class="about">
-      <h2>About Me</h2>
-      <img src="c:\Users\admin\Downloads\pexels-photo-1123262.webp" alt="About Us Image" class="about-image">
-      <p>an 18-year-old food enthusiast with a passion for creating vibrant dining experiences. Our restaurant aims to provide delicious meals with excellent service in a welcoming atmosphere. Whether you're here for a quick snack or a fine dining experience, we've got you covered. Come and explore our menu!</p>
-    </section>
-  </main>
-  
-</body>
-</html>
-
-<html>
-    <centre>
-<!-- Team Section -->
- <centre>
-<section id="team">
-    <h2>Our Team</h2>
-    <div class="team">
-      <tr>
-      <div class="member">
-        <img src="c:\Users\admin\Downloads\download (8).jpeg"> 
-       </div>
-       <br>
-      <div class="member">
-        <img src="c:\Users\admin\Downloads\download (10).jpeg">
-      </div>
-      <br>
-      <div class="member">
-          <img src="c:\Users\admin\Downloads\download (9).jpeg">
-        </div>
-        <br>
-        <div class="member">
-          <img src="c:\Users\admin\Downloads\download (11).jpeg" >
-        </div>
-        <br>
-      </tr>
-    </div>
-  </centre>
-</centre>
-  </section>
 
 
-# OUTPUT:
-![alt text](<Screenshot 2024-12-14 170726-1.png>)
-![alt text](<Screenshot 2024-12-14 170750.png>)
-![alt text](<Screenshot 2024-12-14 170811.png>)
-![alt text](<Screenshot 2024-12-14 170837.png>)
-![alt text](<Screenshot 2024-12-14 170909.png>)
-![alt text](<Screenshot 2024-12-14 170942.png>)
-![alt text](<Screenshot 2024-12-14 170958.png>)
-# RESULT:
-The program for designing software company website using HTML and CSS is completed successfully.
+
+
+
+
+
+
+
+
+
+
+
